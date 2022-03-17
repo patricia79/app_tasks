@@ -1,0 +1,3 @@
+require ('colors');
+
+const showMenu => 
