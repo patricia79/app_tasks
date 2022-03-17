@@ -1,8 +1,14 @@
 require ('colors');
 
+console.clear();
 
-const main => (){
+
+const main = async() => {
+
+    console.log('hola');
+
 
 }
 
 main();
+
