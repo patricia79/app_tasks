@@ -10,17 +10,20 @@ const showMenu = () => {
   console.log("Seleccioni una opció:".yellow);
   console.log("=======================\n".green);
 
-  const taskList = [{
-    type: 'rawlist',
-    message: 'Por favor, elija una fruta:',
-    name: 'fruit',
-    choices: [
-        "Apple",
-        "Pear",
-        "Banana"
-    ]
-}];
+  console.log("=======================".green);
+console.log("Seleccioni una opció:".yellow);
+console.log("=======================\n".green);
 
+const inquirerMenu = [{
+  type: 'rawlist',
+  message: red("Benvinguda a l'aplicació App_Tasks. Què vols fer? Escull una opció:"),
+  name: 'aplicacio',
+  choices: [
+      "Apple",
+      "Pear",
+      "Banana"
+  ]
+}];
   console.log(`${'1.'.green } Crear tasca`);
   console.log(`${'2.'.green } Llistar tasques`);
   console.log(`${'3.' .green } Mostrar tasques completades`);
