@@ -1,7 +1,15 @@
 const inquirer = require("inquirer");
 require("colors");
 
-const inquirerMenu = [
+const inquirerMenu = async() =>{
+
+  console.clear();
+  console.log("=======================".green);
+  console.log("Seleccioni una opció:".yellow);
+  console.log("=======================\n".green);
+
+await inquirerprompt([]);
+  
   {
     type: "rawlist",
     name: "aplicacio",
@@ -10,10 +18,14 @@ const inquirerMenu = [
     ),
     choices: ["verd", "blau", "groc"],
   },
-].then((respostes) => {
+.then((respostes) => {
   console.log("Resposta: ", respostes);
   console.log("=======================".green),
     console.log("Seleccioni una opció:".yellow),
     console.log("=======================\n".green);
   console.log(`Responstes 2: ${respostes}`);
 });
+
+module.exports = {
+  inquirerMenu
+}
