@@ -45,3 +45,6 @@ const readline = require('readline').createInterface({
 module.exports = {
   showMenu,
 };
+
+
+const myList =["nocilla", 4], ["bollitos", 5], ["colacao",2] , ["churritos", 15];
